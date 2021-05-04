@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký Học Viên</title>
+    <style>
+        label {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div style="border-style: solid; border-width:19px; border-color:blanchedalmond ;background-color: blanchedalmond">
+    <form action="/link_server" method="post">
+        <h2 style="color: blue; background-color: aquamarine">Đăng Ký Học Viên</h2>
+        <table>
+            <tr>
+                <td><label>Họ Và Tên: </label></td>
+                <td><input type="text" name="allname" placeholder="Nguyễn Văn B"> <br></td>
+            </tr>
+            <tr>
+                <td><label>Ngày Sinh: </label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Giới Tính: </label></td>
+                <td><input type="radio" value="nam" name="gt">Nam <input type="radio" name="gt" value="nu">Nữ</td>
+            </tr>
+            <tr>
+                <td><label>Địa Chỉ: </label></td>
+                <td><textarea type="text" name="add" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Lớp: </label></td>
+                <td><select name="class" id="classs">
+                    <option value="1">Lớp 1</option>
+                    <option value="2">Lớp 2</option>
+                    <option value="3">Lớp 3</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email: </label></td>
+                <td><input type="text" name="email" placeholder="abc@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label>Điện Thoại: </label></td>
+                <td><input type="text" name="phone" placeholder="0905xxxxxx"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Đăng Ký"> <input type="reset" value="Nhập lại"></td>
+
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
