@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị đầu ra JS</title>
+</head>
+<body>
+   <!--//* Bài tập 1: Hiển thị kết quả sử dụng hàm alert()://*-->
+   <button type="button" onclick="showMessage1();">Bài tập 1 !</button>
+
+<!--
+   Bài tập 2: Hiển thị kết quả sử dụng thẻ HTML:
+-->
+   <div id="messageDiv"></div>
+   <button type="button" onclick="showMessag2();">Bài tập 2!</button>
+<!--
+   Bài tập 3: Hiển thị kết quả sử dụng hàm document.write():
+-->
+   <button type="button" onclick="showMessag3();">Bài tập 3!</button>
+
+<!--
+   Bài tập 4: Hiển thị kết quả sử dụng hàm console.log():
+-->
+
+   <button type="button" onclick="showMessag4();">Bài tập 4!</button>
+
+<script>
+    function showMessage1(){
+        alert('Xin chào! xuat manh hinh ham alert');
+    }
+    function showMessag2(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!xuat mang hinh ham getelemenntbyid';
+    }
+    function showMessag3(){
+        document.write('Xin chào!xuat manh hinh ham write');
+    }
+    function showMessag4(){
+        console.log('Xin chào!xuat manh hinh ham console.log()');
+    }
+</script>
+</body>
+</html>
